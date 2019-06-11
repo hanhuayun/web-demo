@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>web07</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+		}
+		a{
+			text-decoration: none;
+		}
+		li{
+			list-style-type:none;
+		}
+		.top{
+			height:45px;
+			background-color:rgb(245,241,239);
+		}
+		.top p{
+			line-height: 45px;
+		}
+		.top div{
+			width:1200px;
+			margin:0 auto;
+		}
+		.top-left{
+			float:left;
+		}
+		.top-left img{
+			position:absolute;
+			left:485px;
+			top:10px;
+		}
+		.top-right{
+			float:right;
+		}
+		.top  div a{
+			color:#000;
+		}
+		.search{
+			width:1200px;
+			margin:0 auto;
+			height:120px;
+		}
+		.search div{
+			display:inline-block;
+		}
+		.search input{
+			height:35px;
+			width:380px;
+			border:2px solid #f83838;
+			font-size:15px;
+			color:#c6c6c6;
+			position:absolute;
+			left:700px;
+			top:80px;
+		}
+		#search-white{
+			height:39px;
+			width:70px;
+			text-align:center;
+			line-height:39px;
+			background-color:#f83838;
+			position:absolute;
+			left:1080px;
+			top:80px;
+		}
+		.search a{
+			color:#fff;
+		}
+		.search-shop{
+			width:150px;
+			height:39px;
+			margin-left:285px;
+			background-color:#f5f5f5;
+			position:absolute;
+			right:331px;
+			top:80px;
+		}
+		.search-shop img{
+			margin-left:5px;
+			position:absolute;
+			top:10px;
+		} 
+		.search-shop p{
+			margin-left:8px;
+			margin-top:10px;
+			font-size:15px;
+			text-align:center;
+		}
+		.nav{
+			width:1200px;
+			margin:0 auto;
+			height:35px;
+		}
+		.nav ul li{
+			width:90px;
+			line-height:35px;
+			text-align:center;
+			display:inline-block;
+		}
+		.nav ul li:last-child{
+			background-color:rgb(248,56,56); 
+			border-radius:10%;
+		}
+		.nav ul li:last-child a{
+			color:#fff;
+		}
+		.nav a{
+			font-size:15px;
+			color:#000;
+		}
+		.nav li:hover{
+			background-color:rgb(248,56,56); 
+			border-radius:10%;
+		}
+		.nav li:hover a{
+			color:white;
+		}
+		.main{
+			height:635px;
+			margin-top:3px;
+			border-top:2px solid rgb(248,56,56);
+			background-color:rgb(251,251,251);
+		}
+		.crumb{
+			width:1200px;
+			line-height:50px;
+			margin:0 auto;
+		}
+		.crumb p{
+			font-size:15px;
+			display:inline-block;
+		}
+		.crumb a{
+			font-size: 15px;
+			color:#000;
+		}
+		.main-1{
+			width:1200px;
+			margin:0 auto;
+		}
+		.sidebar{
+			width:212px;
+		}
+		.sidebar-top{
+			height:40px;
+			background-color: #fff;
+		}
+		.sidebar-top img{
+			float:left;
+			margin-top:7px;
+			margin-left:10px;
+		}
+		.sidebar-top p{
+			line-height:40px;
+			padding-left:60px;
+		}
+		.sidebar-bottom{
+			background-color:#fff;
+			height:525px;
+			margin-top:10px;
+		}
+		.sidebar-bottom ul li{
+			line-height:50px;
+			padding-left:60px;
+		}
+		.sidebar-bottom a{
+			color:#000;
+			font-size:15px;
+		}
+		.sidebar-bottom li:hover a{
+			color:#fd0304;
+		}
+		.main-2{
+			margin-left:555px;
+			height:575px;
+			width:978px;
+			border:1px solid rgb(245,241,239);
+			background-color:#fff;
+			margin-top:-575px;
+		}
+		.main-2 div{
+			height:270px;
+			width:230px;
+			border:1px solid rgb(245,241,239);
+			margin-top:10px;
+			margin-left:10px;
+			float:left;
+		}
+		.main-2 div img{
+			height:200px;
+			width:210px;
+			margin-left:20px; 
+		}
+		.main-2 div p{
+			line-height: 40px;
+			font-size:16px;
+			text-align:center;
+		}
+		.main-2 div h4{
+			font-size:16px;
+			font-weight:normal;
+			text-align:center;
+			color:#aaa;
+		}
+		.footer{
+			height:250px;
+			width:3000px;
+			background-color: #000;
+		}
+		.footer-top{
+			width:1200px;
+			margin:0 auto;
+			margin-left:340px;
+		}
+		.footer-top div{
+			width:271px;
+			height:160px;
+			float:left;
+		}
+		.footer-top div:last-child{
+			width:110px;
+			height:160px;
+		}
+		.footer-top div li{
+			font-size:16px;
+			color:#fff;
+			line-height:30px;
+			text-align:left;
+		}
+		.footer-top div a{
+			font-size:14px;
+			color:#fff;
+		}
+		.footer-bottom{
+			width:1200px;
+			height:140px;
+			margin-left:340px;
+			border-bottom:1px solid #2e2e2e;
+		}
+		.footer-bottom p{
+			line-height: 40px;
+			text-align:center;
+			font-size:14px;
+			color:#fff;
+		}
+		.footer-bottom a{
+			color:#fff;
+		}
+	</style>
+</head>
+<body>
+	<div class="top">
+		<div>
+			<p class="top-left"><a href="">我的收藏</a>  E族之家手机版 <img src="imgs/qq.jpg" alt="">:328203328</p>
+			<p class="top-right"><a href="">扫描加入</a>  欢迎来到E族之家， <a href="#">请登录</a> | <a href="#">注册</a></p>
+		</div>
+	</div>
+	<div class="search">
+		<img  id="photo" src="imgs/photo.png" alt="">
+		<div>
+			<form>
+				<input type="text" name="名称" value="   请输入关键词！"/>
+				<div id="search-white">
+				<a href="#">搜索</a>
+				</div>	
+			</form>		
+		</div>
+		<div class="search-shop">
+			<img src="imgs/shop3.png" alt=""><p>购物车（<span style="color:rgb(248,56,56);">0</span>）件</p>
+		</div>
+	</div>
+	<div class="nav">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">E族生活</a></li>
+				<li><a href="#">E族服务</a></li>
+				<li><a href="#">E族爱心</a></li>
+			</ul>		
+	</div>
+	<div class="main">
+		<div class="crumb">
+			<p>当前位置:   </p>
+			<a href="#">E族爱心</a> > 
+			<a href="#">食品</a>
+		</div>
+		<div class="main-1">
+			<div class="sidebar">
+				<div class="sidebar-top">
+					<img src="imgs/list0.png" alt=""><p>全部分类</p>
+				</div>
+				<div class="sidebar-bottom">
+					<ul>
+						<li><a href="#">>食品</a></li>
+						<li><a href="#">>生活用品</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main-2">
+			<div>
+				<img src="imgs/pepper.png" alt="">
+				<h4>精品辣椒100克</h4>
+				<p>¥90.00</p>
+			</div>
+			<div>
+				<img src="imgs/passion fruit.png" alt="">
+				<h4>特级百香果3斤</h4>
+				<p>¥90.00</p>
+			</div>
+			<div>
+				<img src="imgs/beer.png" alt="">
+				<h4>万威啤酒500ml</h4>
+				<p>¥90.00</p>
+			</div>
+			<div>
+				<img src="imgs/nut.png" alt="">
+				<h4>万威啤酒500ml</h4>
+				<p>¥90.00</p>
+			</div>
+			<div>
+				<img src="imgs/pepper.png" alt="">
+				<h4>精品辣椒100克</h4>
+				<p>¥90.00</p>
+			</div>
+			<div>
+				<img src="imgs/passion fruit.png" alt="">
+				<h4>特级百香果3斤</h4>
+				<p>¥90.00</p>
+			</div>
+			<div>
+				<img src="imgs/beer.png" alt="">
+				<h4>万威啤酒500ml</h4>
+				<p>¥90.00</p>
+			</div>
+			<div>
+				<img src="imgs/nut.png" alt="">
+				<h4>万威啤酒500ml</h4>
+				<p>¥90.00</p>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer-top">
+			<div>
+				<ul>
+					<li>新手上路</li>
+					<li><a href="#" target="-blank">售后流程</a></li>
+					<li><a href="#" target="-blank">购物流程</a></li>
+					<li><a href="#" target="-blank">订购方式</a></li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<li>配送方式</li>
+					<li><a href="#" target="-blank">货到付款区域</a></li>
+					<li><a href="#" target="-blank">配送支付查询</a></li>
+					<li><a href="#" target="-blank">支付方式说明</a></li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<li>购物指南</li>
+					<li><a href="#" target="-blank">常见问题</a></li>
+					<li><a href="#" target="-blank">订购流程</a></li>
+					<li><a href="#" target="-blank">注册新会员</a></li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<li>售后服务</li>
+					<li><a href="#" target="-blank">退换货原则</a></li>
+					<li><a href="#" target="-blank">售后服务保证</a></li>
+					<li><a href="#" target="-blank">换货流程</a></li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<li>关于我们</li>
+					<li><a href="#" target="-blank">网站故障报告</a></li>
+					<li><a href="#" target="-blank">联系我们</a></li>
+					<li><a href="#" target="-blank">投诉与建议</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p><a href="#" target="-blank">E族生活</a> | 
+				<a href="#" target="-blank">居家维修保养</a> | 
+				<a href="#" target="-blank">住宿优惠信息</a> | 
+				<a href="#" target="-blank">出行接送</a> | 
+				<a href="#" target="-blank">E族活动</a> | 
+				<a href="#" target="-blank">E族爱心</a> | 
+				<a href="#" target="-blank">积分商城</a>
+			</p>
+			<p>©2017-2018 E族之家 版权所有，并保留所有权利。ICP备案证书号：粤ICP备17127392号</p>
+		</div>
+	</div>
+</body>
